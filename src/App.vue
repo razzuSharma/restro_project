@@ -1,12 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="Restro logo" src="./assets/restro.jpeg" />
+  <SignUp/>
 </template>
+
 <script>
+import SignUp from './components/SignUp.vue';
 export default {
-  name: 'App',
-  components: {
-  }
-}
+  name: "App",
+  components: {SignUp},
+};
 </script>
 
 <style>
@@ -17,5 +19,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+img {
+  width: 100px;
+  margin-bottom: 20px;
+  
 }
 </style>

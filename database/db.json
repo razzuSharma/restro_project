@@ -1,5 +1,102 @@
 {
-    "user": [
-        { }
-    ]
+  "users": [
+    {
+      "name": "Voluptate provident",
+      "email": "wylyrami@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "terms": true,
+      "passwordError": "",
+      "id": 1
+    },
+    {
+      "name": "Culpa qui ratione hi",
+      "email": "kajuxeqefy@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "terms": true,
+      "passwordError": "",
+      "id": 2
+    },
+    {
+      "name": "Raju",
+      "email": "razzu236@gmail.com",
+      "password": "Casper008",
+      "terms": true,
+      "passwordError": "",
+      "id": 3
+    },
+    {
+      "name": "Harum veniam quod q",
+      "email": "suwyxi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "terms": true,
+      "passwordError": "",
+      "id": 4
+    },
+    {
+      "name": "Do beatae in nihil a",
+      "email": "tyjyluc@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "terms": true,
+      "passwordError": "",
+      "id": 5
+    },
+    {
+      "name": "In omnis minima dolo",
+      "email": "razzu236@gmail.com",
+      "password": "Casper008",
+      "terms": true,
+      "passwordError": "",
+      "id": 6
+    }
+  ],
+  "restro": [
+    {
+      "id": 1,
+      "name": "Pizzahut",
+      "address": "Gwaldubba",
+      "contact": "6564646"
+    },
+    {
+      "id": 2,
+      "name": "BurgerHouse",
+      "address": "Damak",
+      "contact": "545454"
+    },
+    {
+      "name": "Wallace Kemp",
+      "address": "Sunt laboriosam eu ",
+      "contact": "9817022866",
+      "id": 3
+    },
+    {
+      "name": "Prescott Mann",
+      "address": "At aspernatur fugiat",
+      "contact": "Cillum nihil quasi e",
+      "id": 4
+    },
+    {
+      "name": "Odessa Guerra",
+      "address": "Dolorem nihil tempor",
+      "contact": "Laborum Corrupti e",
+      "id": 5
+    },
+    {
+      "name": "Odessa Guerra",
+      "address": "Dolorem nihil tempor",
+      "contact": "Laborum Corrupti e",
+      "id": 6
+    },
+    {
+      "name": "Odessa Guerra",
+      "address": "Dolorem nihil tempor",
+      "contact": "Laborum Corrupti e",
+      "id": 7
+    },
+    {
+      "name": "Odessa Guerra",
+      "address": "Dolorem nihil tempor",
+      "contact": "Laborum Corrupti e",
+      "id": 8
+    }
+  ]
 }

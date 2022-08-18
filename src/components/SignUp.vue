@@ -1,9 +1,11 @@
 <template>
-<div>
-  <h1 class="font-bold  ">Sign Up Form</h1>
-</div>
+  <div>
+    <h1 class="font-bold">Sign Up Form</h1>
+  </div>
   <div>
     <form @submit.prevent="handleSubmit">
+      <label>Name :</label>
+      <input type="text" v-model="name" required />
       <label>Email :</label>
       <input type="email" v-model="email" required />
 
@@ -15,17 +17,25 @@
         <label>Please accept terms and conditions</label>
       </div>
       <div class="button">
-        <button class="submit" type="submit">Sign up here</button>
+        <button
+          class="submit bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          type="submit"
+        >
+          Sign up here
+        </button>
       </div>
     </form>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "SignUp",
   data() {
     return {
+      name: "",
       email: "",
       password: "",
       terms: false,
@@ -33,9 +43,23 @@ export default {
     };
   },
   methods: {
-    handleSubmit () 
-    {
-      console,console.log(this.email, this.password);
+    async handleSubmit() {
+      const apiData = await axios.post("http://localhost:3000/users", {
+        name: this.name,
+        email: this.email,  
+        password: this.password,
+        terms: this.terms,
+        passwordError: this.passwordError,
+      });
+      localStorage.setItem('signupAccount', JSON.stringify(apiData.data));
+      this.$router.push({ name: "Login" });
+    },
+  },
+
+  mounted() {
+    const userStatus = localStorage.getItem('signupAccount');
+    if (userStatus) {
+      this.$router.push({ name: 'Home' });
     }
   },
 };
@@ -105,5 +129,4 @@ button {
   font-size: 0.8em;
   font-weight: bold;
 }
-
 </style>

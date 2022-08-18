@@ -1,13 +1,10 @@
 <template>
-  <img alt="Restro logo" src="./assets/restro.jpeg" />
-  <SignUp/>
+<router-view />
 </template>
 
 <script>
-import SignUp from './components/SignUp.vue';
 export default {
   name: "App",
-  components: {SignUp},
 };
 </script>
 
@@ -24,6 +21,5 @@ export default {
 img {
   width: 100px;
   margin-bottom: 20px;
-  
 }
 </style>
